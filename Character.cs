@@ -70,7 +70,7 @@ public class Character
 
     public override string ToString()
     {
-      return $"Name: {name}, {characterClass}, {level}, {string.Join("|", equipment)}";
+      return $"Name: {name} Class: {characterClass} Level: {level} Equipment: {string.Join(", ", equipment.Split("|"))}";
     }
 
     public Character(string? name = null, string? characterClass = null, uint? level = null, string? equipment = null) {
